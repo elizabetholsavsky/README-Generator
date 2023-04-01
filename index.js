@@ -1,103 +1,115 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 const questions = [
     {
-        name: 'license'
-        message: 'Select a license type: '
-        type: 'list'
-        choices: ''
+        name: 'license',
+        message: 'What is the license type for this application?',
+        type: 'list',
+        choices: '',
         validate: (answer) => {
             if (answer === "") {
-                return console.log("Enter a valid title for your project");
+                return console.log("Select a license type: ");
             }
             return true;
         }
     },
     { 
-        name: 'title'
-        message: 'What is the title?'
-        type: 'input'
+        name: 'title',
+        message: 'What is the title of this application?',
+        type: 'input',
         validate: (answer) => {
             if (answer === "") {
-                return console.log("Enter a valid title for your project");
+                return console.log("What is the title?");
             }
             return true;
         }
     },
     {
-        name: 'description'
-        message: 'Describe the application:'
-        type: 'input'
+        name: 'description',
+        message: 'What does this application do?',
+        type: 'input',
         validate: (answer) => {
             if (answer === "") {
-                return console.log("Enter a valid title for your project");
+                return console.log("Describe the application:");
             }
             return true;
         }
     },
     {
-        name: 'install'
-        message: 'How do you install the application?'
-        type: 'input'
+        name: 'install',
+        message: 'How do you install this application?',
+        type: 'input',
         validate: (answer) => {
             if (answer === "") {
-                return console.log("Enter a valid title for your project");
+                return console.log("How do you install the application?");
             }
             return true;
         }
     },
     {
-        name: 'usage'
-        message: "How is the application used?"
-        type: 'input'
+        name: 'usage',
+        message: "How is this application used?",
+        type: 'input',
         validate: (answer) => {
             if (answer === "") {
-                return console.log("Enter a valid title for your project");
+                return console.log("How is the application used?");
             }
             return true;
         }
     },
     {
-        name: 'contributing'
-        message: 'How can others contribute?'
-        type: 'input'
+        name: 'contributing',
+        message: 'How can others contribute to this application?',
+        type: 'input',
         validate: (answer) => {
             if (answer === "") {
-                return console.log("Enter a valid title for your project");
+                return console.log("How can others contribute?");
             }
             return true;
         }
     },
     {
-        name: 'tests'
-        message: 'How can you test the application?'
-        type: 'input'
+        name: 'tests',
+        message: 'How can you test this application?',
+        type: 'input',
         validate: (answer) => {
             if (answer === "") {
-                return console.log("Enter a valid title for your project");
+                return console.log("How can you test the application?");
             }
             return true;
         }
     },
     {
-        name: 'username'
-        message: 'What is your GitHub username?'
-        type: 'input'
+        name: 'username',
+        message: 'What is your GitHub username?',
+        type: 'input',
         validate: (answer) => {
             if (answer === "") {
-                return console.log("Enter a valid title for your project");
+                return console.log("What is your GitHub username?");
             }
             return true;
         }
     },
     {
-        name: 'email'
-        message: 'What is your email?'
-        type: 'input'
+        name: 'email',
+        message: 'What is your email?',
+        type: 'input',
         validate: (answer) => {
             if (answer === "") {
-                return console.log("Enter a valid title for your project");
+                return console.log("What is your email?");
+            }
+            return true;
+        }
+    },
+    {
+        name: 'fileName',
+        message: 'What would you like to name this file?',
+        type: 'input',
+        validate: (answer) => {
+            if (answer === "") {
+                return console.log("What is your email?");
             }
             return true;
         }
@@ -105,7 +117,10 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.appendFile(`${fileName}.md`, data,
+    (err) => err ? console.log(err) : console.log(`${fileName}.md has been generated.`))
+}
 
 // TODO: Create a function to initialize app
 function init() {}
