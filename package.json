@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/elizabetholsavsky/README-Generator/issues"
   },
-  "homepage": "https://github.com/elizabetholsavsky/README-Generator#readme"
+  "homepage": "https://github.com/elizabetholsavsky/README-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
