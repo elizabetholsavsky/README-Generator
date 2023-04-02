@@ -34,6 +34,6 @@ In the demonstration video, the case of 'no license selected by user' was tested
 ## Questions
 Ask questions by contacting me at:
 
-Github [https://github.com/elizabetholsavsky](https://github.com/elizabetholsavsky)
+Github [elizabetholsavsky](https://github.com/elizabetholsavsky)
 
 Email elizabetholsavsky@gmail.com
