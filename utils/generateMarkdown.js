@@ -30,17 +30,64 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// license link for license section
+function renderLicenseLink(license) {
+  switch (license) {
+    case 'Apache license 2.0':
+      return `[${license}](https://opensource.org/licenses/Apache-2.0)`;
+    case 'GNU General Public License v3.0':
+      return `[${license}](https://www.gnu.org/licenses/gpl-3.0)`;
+    case 'MIT License':
+      return `[${license}](https://opensource.org/licenses/MIT)`;
+    case 'BSD 2-Clause "Simplified" License':
+      return `[${license}](https://opensource.org/licenses/BSD-2-Clause)`;
+    case 'BSD 3-Clause "New" or Revised" License':
+      return `[${license}](https://opensource.org/licenses/BSD-3-Clause)`;
+    case 'Boost Software License 1.0':
+      return `[${license}](https://www.boost.org/LICENSE_1_0.txt)`;
+    case 'Creative Commons Zero v1.0 Universal':
+      return `[${license}](http://creativecommons.org/publicdomain/zero/1.0/)`;
+    case 'Eclipse Public License':
+      return `[${license}](https://opensource.org/licenses/EPL-1.0)`;
+    case 'GNU Alfredo General Public License v3.0':
+      return `[${license}](https://www.gnu.org/licenses/agpl-3.0)`;
+    case 'GNU General Public License v2.0':
+      return `[${license}](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)`;
+    case 'Mozilla Public License 2.0':
+      return `[${license}](https://opensource.org/licenses/MPL-2.0)`;
+    case 'The Unlicense':
+      return `[${license}](http://unlicense.org/)`;
+    default:
+      return ``;
+  }
+}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+// create license section link in table of contents
+function renderLicenseTOC(license) {
+  if (!license) {
+    return '';
+  } else {
+    return `
+ * [License](#license)
+`
+  }
+}
 
-// TODO: Create a function to generate markdown for README
+// create license section
+function renderLicenseSection(license) {
+  if (!license) {
+    return '';
+  } else {
+    return `
+ ## License
+${renderLicenseLink(license)}
+`
+  }
+}
+
+// generate README.md
 function generateMarkdown(data) {
-  return `# ${data.fileName}
+  return `# ${data.title}
 
   ## Description
   ${data.description}
@@ -49,16 +96,18 @@ function generateMarkdown(data) {
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
+    ${renderLicenseTOC(data.license)}
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
-  * [License](#license)
 
   ## Installation
   ${data.install}
 
   ## Usage
   ${data.usage}
+  
+  ${renderLicenseSection(data.license)}
 
   ## Contributing
   ${data.contributing}
@@ -71,7 +120,6 @@ function generateMarkdown(data) {
   ${data.email}
   #### Github:
   [${data.username}](https://github.com/${data.username})
-
 `;
 }
 

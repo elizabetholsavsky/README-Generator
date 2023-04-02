@@ -1,7 +1,7 @@
 const questions = [
     {
-        name: 'fileName',
-        message: 'What would you like to name this file?',
+        name: 'title',
+        message: 'What is the title of your project?',
         type: 'input',
         validate: (answer) => {
             if (answer === "") {
@@ -85,6 +85,17 @@ const questions = [
     {
         name: 'email',
         message: 'What is your email?',
+        type: 'input',
+        validate: (answer) => {
+            if (answer === "") {
+                return console.log("\n Try again");
+            }
+            return true;
+        }
+    },
+    {
+        name: 'fileName',
+        message: 'What would you like to name this file?',
         type: 'input',
         validate: (answer) => {
             if (answer === "") {
