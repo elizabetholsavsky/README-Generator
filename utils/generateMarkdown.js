@@ -22,10 +22,10 @@ function generateMarkdown(data) {
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
+  * [License](#license)
 
   ## Installation
   ${data.install}
@@ -43,7 +43,9 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
+  ###Email:
   ${data.email}
+  ###Github:
   [${data.username}](https://github.com/${data.username})
 
 `;
