@@ -20,13 +20,15 @@ Watch a video demonstration of the basic functionality:
 Check if you have Node.js installed by typing "node -v" in your command line. If node is not installed, visit the [Node.js website](https://nodejs.org/en) to install. Next, clone this project repository to your computer.  
 
 ## Usage
-Change directories to your new project folder in the terminal. Run the application by typing "node index.js" in the terminal's command line. Refer back to the video posted in the description as needed.
+Change directories to your new project folder in the terminal. Invoke the application by typing "node index.js" in the terminal's command line. Refer back to the video posted in the description as needed.
 
 ## License
 [MIT License](https://opensource.org/licenses/MIT)
 
 ## Contributing
 [Starter code](https://github.com/coding-boot-camp/potential-enigma) was provided by Xander Rapstine ([Xandromus](https://github.com/Xandromus)) and Grace Choi ([gachoi06](https://github.com/gachoi06)).
+
+[License badges with links](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba) were provided by [lukas-h](https://gist.github.com/lukas-h). 
 
 ## Tests
 In the demonstration video, the case of 'no license selected by user' was tested. The result was licenses was not listed in the README table of contents and no h2 section for licenses was created.
