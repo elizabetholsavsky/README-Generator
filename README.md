@@ -17,7 +17,7 @@ Watch a video demonstration of the basic functionality:
 * [Questions](#questions)
 
 ## Installation
-Install Node.js and clone the project repository to your computer.  
+Check if you have Node.js installed by typing "node -v" in your command line. If node is not installed, visit the [Node.js website](https://nodejs.org/en) to install. Next, clone this project repository to your computer.  
 
 ## Usage
 Change directories to your new project folder in the terminal. Run the application by typing "node index.js" in the terminal's command line. Refer back to the video posted in the description as needed.
