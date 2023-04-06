@@ -118,7 +118,8 @@ function generateMarkdown(data) {
 
   ## Questions
   Contact me with any additional questions:
-  [https://github.com/${data.username}](https://github.com/${data.username})
+  [https://github.com/${data.username}]
+  (https://github.com/${data.username})
   ${data.email}
 `;
 }
