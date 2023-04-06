@@ -4,11 +4,14 @@
 
 This application was created as part of a UT Full Stack Coding Bootcamp challenge. I modified starter code to create a professional README generator. The generator collects user input and creates a README markdown file including: description, license badge, installation, usage, license link, contributing, tests, and questions.
 
-Watch a video demonstration of the basic functionality:
-[insert google drive link]
 
 [![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Watch a [video](https://drive.google.com/file/d/1sNYA5YKhCqttrKqfAqJYAAIw1JG5mzuJ/view?usp=sharing) demonstration of the basic functionality:
+
+
+https://user-images.githubusercontent.com/116515976/230472502-2408ccd4-ac22-44da-baf1-3231592223a3.mov
 
 ## Table of Contents
 
