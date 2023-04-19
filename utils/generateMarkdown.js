@@ -1,4 +1,4 @@
-// create badge with link
+// create badges with link, badges appears under description if selected
 function renderLicenseBadge(license) {
   switch (license) {
     case 'Apache license 2.0':
@@ -30,7 +30,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-// license link for license section
+// license link for license section, creates link to license type selected by user
 function renderLicenseLink(license) {
   switch (license) {
     case 'Apache license 2.0':
@@ -62,7 +62,7 @@ function renderLicenseLink(license) {
   }
 }
 
-// create license section link in table of contents
+// create license section link in table of contents, only created if license type is provided by user
 function renderLicenseTOC(license) {
   if (!license) {
     return '';
@@ -73,7 +73,7 @@ function renderLicenseTOC(license) {
   }
 }
 
-// create license section
+// create license section, only adds license title/section if license type is provided by user
 function renderLicenseSection(license) {
   if (!license) {
     return '';
@@ -85,7 +85,7 @@ ${renderLicenseLink(license)}
   }
 }
 
-// generate README.md
+// generate README.md, template literal for markdown file
 function generateMarkdown(data) {
   return `# ${data.title}
 
