@@ -3,6 +3,7 @@ const questions = [
         name: 'title',
         message: 'What is the title of your project?',
         type: 'input',
+        // validate: requires user to input text/title before moving on to next question
         validate: (answer) => {
             if (answer === "") {
                 return console.log("\n Try again");
@@ -55,6 +56,7 @@ const questions = [
         name: 'fileName',
         message: 'What would you like to name this file?',
         type: 'input',
+        // validate: requires user to input text/file name before building README
         validate: (answer) => {
             if (answer === "") {
                 return console.log("\n Try again");
