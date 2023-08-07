@@ -4,12 +4,10 @@
 
 This application was created as part of a UT Full Stack Coding Bootcamp challenge. I modified starter code to create a professional README generator. The generator collects user input and creates a README markdown file including: description, license badge, installation, usage, license link, contributing, tests, and questions.
 
-
 [![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Watch a [video](https://drive.google.com/file/d/1sNYA5YKhCqttrKqfAqJYAAIw1JG5mzuJ/view?usp=sharing) demonstration of the basic functionality:
-
 
 https://user-images.githubusercontent.com/116515976/230472502-2408ccd4-ac22-44da-baf1-3231592223a3.mov
 
@@ -19,8 +17,7 @@ https://user-images.githubusercontent.com/116515976/230472502-2408ccd4-ac22-44da
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
+* [Contact](#contact)
 
 ## Installation
 
@@ -40,14 +37,10 @@ Change directories to your new project folder in the terminal. Invoke the applic
 
 [License badges with links](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba) were provided by [lukas-h](https://gist.github.com/lukas-h).
 
-## Tests
+## Contact
+* Email elizabetholsavsky@gmail.com
+* LinkedIn [https://www.linkedin.com/in/elizabetholsavsky/](https://www.linkedin.com/in/elizabetholsavsky/)
+* Portfolio [https://elizabetholsavsky.com/](https://elizabetholsavsky.com/)
+* Hashnode [https://elizabetholsavsky.hashnode.dev/](https://elizabetholsavsky.hashnode.dev/)
+* Twitter [@elizavsky](https://twitter.com/home)
 
-In the demonstration video, the case of 'no license selected by user' was tested. The result was licenses was not listed in the README table of contents and no h2 section for licenses was created.
-
-## Questions
-
-Ask questions by contacting me at:
-
-Github [elizabetholsavsky](https://github.com/elizabetholsavsky)
-
-Email elizabetholsavsky@gmail.com
